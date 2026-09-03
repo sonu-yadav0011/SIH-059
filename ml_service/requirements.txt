@@ -1,0 +1,17 @@
+# ML Service — Python Dependencies
+# Install with: pip install -r ml_service/requirements.txt
+
+# Web framework
+flask==3.1.1
+flask-cors==5.0.1
+
+# Production WSGI server (single worker — TF not thread-safe)
+gunicorn==23.0.0
+
+# ML / numeric
+numpy>=1.24,<2.0
+tensorflow>=2.15,<2.18
+
+# Data loading (NetCDF)
+xarray>=2024.1
+netCDF4>=1.6

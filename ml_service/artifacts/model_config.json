@@ -1,0 +1,45 @@
+{
+    "model_name": "SeasonalResidualSeaIceCNN",
+    "dataset": "NSIDC-0803 AMSR2 Southern Hemisphere Sea Ice Concentration",
+    "region": {
+        "name": "Bharati Station Region",
+        "latitude_min": -70,
+        "latitude_max": -60,
+        "longitude_min": 60,
+        "longitude_max": 90
+    },
+    "grid": {
+        "height": 66,
+        "width": 57,
+        "valid_cells": 2108
+    },
+    "forecast": {
+        "input_days": 7,
+        "forecast_horizon_days": 7
+    },
+    "input_features": {
+        "total_channels": 9,
+        "sea_ice_history_channels": 7,
+        "seasonal_features": [
+            "sin_day_of_year",
+            "cos_day_of_year"
+        ]
+    },
+    "target": {
+        "variable": "sea_ice_concentration",
+        "range": [
+            0.0,
+            1.0
+        ]
+    },
+    "model_performance": {
+        "validation": {
+            "mae": 0.036965,
+            "rmse": 0.082219
+        },
+        "test": {
+            "mae": 0.075072,
+            "rmse": 0.118857
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "dataset": "Copernicus Marine Ocean Physics",
+    "time_start": "2023-01-01T00:00:00.000000000",
+    "time_end": "2025-12-31T00:00:00.000000000",
+    "total_days": 1096,
+    "depth_meters": 0.49402499198913574,
+    "grid_shape": [
+        66,
+        57
+    ],
+    "valid_navigation_cells": 2087,
+    "features": {
+        "uo": "Eastward ocean current velocity in m/s",
+        "vo": "Northward ocean current velocity in m/s",
+        "speed": "Ocean current magnitude in m/s",
+        "direction": "Direction water is moving toward, 0=east, 90=north, 180=west, 270=south"
+    }
+}

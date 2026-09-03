@@ -1,0 +1,9 @@
+copernicusmarine
+xarray
+numpy
+pandas
+scikit-learn
+tensorflow
+selenium 
+beautifulsoup4 
+requests 
